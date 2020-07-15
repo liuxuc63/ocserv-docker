@@ -76,14 +76,3 @@ $> Re-enter password:
 * [Gnutls 3.1.23 on Ubuntu 14.04](http://www.bauer-power.net/2014/06/how-to-install-gnutls-3123-from-source.html)
 
 
-## 问题
-
-### 大家最近连接上 ocserv 就断开, 我猜测因为有比较多的人使用同一个 Docker Image 使得太多人使用同一个证书, 然后我做了处理, 
-
-至少我的几台服务器已经正常, 不会断开了. 请大家 `docker rmi wppurking/ocserv` 然后再执行运行的命令下载最新的 image, 如果有条件自己 build 以下或者使用自己的证书即可.
-
-### 关于限速, 我想应该是网络的干扰. 我部署的服务器 ( [1.5 MB/s](https://toolstud.io/data/bandwidth.php?compare=network&speed=1.5&speed_unit=MB%2Fs) 大概 12 Mbps) 如下:  
-![AnyConnect](http://77g8qz.com1.z0.glb.clouddn.com/anyconnect.png?imageView2/2/w/300)
-
-### 如果你网络好的话, 那么可以看到如下的情况 ( [7.1MB/s](https://toolstud.io/data/bandwidth.php?compare=network&speed=7.1&speed_unit=MB%2Fs) 的峰值, 56.8 Mbps) :
-![AnyConnect Speed](http://77g8qz.com1.z0.glb.clouddn.com/anyconnect-top.jpg?imageView2/0/h/400/q/100)
